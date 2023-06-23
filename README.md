@@ -5,19 +5,19 @@ The OpenCAD Front-End Wireframe Project is a foray into redesigning the front-en
 In short, this is a project with a lot of filler content that's meant to explore new design options and opportunities.
 
 
-## Commit 58dad71
+## Commit 
 
 06.22.2023
 
-- Profile page created
+- Profile page completed
 - Admin Dashboard updated - new "Users at a Glance"
+- Character Management page created
 
 To do:
-- Working links between pages
 - Department pages
 - User Management dashboard
 - Get modal popups working
-
+- Finish Character Management page
 
 ## Commit 6e3eeb1
 
