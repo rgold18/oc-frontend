@@ -1,16 +1,33 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="assets/js/color-modes.js"></script>
-
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/brand/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="assets/brand/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/brand/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="assets/brand/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/brand/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/brand/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="assets/brand/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/brand/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="assets/brand/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/brand/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/brand/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="assets/brand/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <!--Favicon-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.112.5">
-    <title>Dashboard Template · Bootstrap v5.3</title>
+    <title>Civilians Dashboard</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
-
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -197,7 +214,7 @@
 </svg>
 
 <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">{Community.Name}</a>
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">{Community.Name}</a>
 
   <ul class="navbar-nav flex-row d-md-none">
     <li class="nav-item text-nowrap">
@@ -218,200 +235,269 @@
 </header>
 
 <div class="container-fluid">
-    <div class="row">
-      <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
-        <div class="offcanvas-lg offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
-          <div class="offcanvas-header">
-            <h1 class="offcanvas-title" id="sidebarMenuLabel">{Community.Name}</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                  <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                  Dashboard
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark"/></svg>
-                  Notifications
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#cart"/></svg>
-                  Departments Management
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#people"/></svg>
-                  User Management
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#graph-up"/></svg>
-                  Statistics
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#puzzle"/></svg>
-                  Integrations / API
-                </a>
-              </li>
-            </ul>
-            <br>
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mb-1 text-body-secondary text-uppercase">
-              <span>Saved reports</span>
-              <a class="link-secondary" href="#" aria-label="Add a new report">
-                <svg class="bi"><use xlink:href="#plus-circle"/></svg>
+  <div class="row">
+    <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+      <div class="offcanvas-lg offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title" id="sidebarMenuLabel">{Community.Name}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                <svg class="bi"><use xlink:href="#house-fill"/></svg>
+                Dashboard
               </a>
-            </h6>
-            <ul class="nav flex-column mb-auto">
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                  Current month
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                  Last quarter
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                  Social Media Links
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                  Other
-                </a>
-              </li>
-            </ul>
-  
-            <hr class="my-3">
-            <h6 class="sidebar-heading d-flex px-3 mb-1 text-body-secondary text-uppercase">
-              Account Settings
-            </h6>
-            <ul class="nav flex-column mb-auto">
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="profile.html">
-                  <svg class="bi"><use xlink:href="#gear-wide-connected"/></svg>
-                  Settings
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi"><use xlink:href="#door-closed"/></svg>
-                  Sign out
-                </a>
-              </li>
-            </ul>
-          </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#file-earmark"/></svg>
+                Notifications
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#cart"/></svg>
+                Departments Management
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#people"/></svg>
+                User Management
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#graph-up"/></svg>
+                Statistics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#puzzle"/></svg>
+                Integrations / API
+              </a>
+            </li>
+          </ul>
+          <br>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mb-1 text-body-secondary text-uppercase">
+            <span>Saved reports</span>
+            <a class="link-secondary" href="#" aria-label="Add a new report">
+              <svg class="bi"><use xlink:href="#plus-circle"/></svg>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-auto">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+                Current month
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+                Last quarter
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+                Social Media Links
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+                Other
+              </a>
+            </li>
+          </ul>
+
+          <hr class="my-3">
+          <h6 class="sidebar-heading d-flex px-3 mb-1 text-body-secondary text-uppercase">
+            Account Settings
+          </h6>
+          <ul class="nav flex-column mb-auto">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="profile.html">
+                <svg class="bi"><use xlink:href="#gear-wide-connected"/></svg>
+                Settings
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <svg class="bi"><use xlink:href="#door-closed"/></svg>
+                Sign out
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-     <br>
-     <h1>Select a Department</h1>
-     <hr>
-     <p>The departments displayed will be based on enrolled departments.</p>
-     <div class="row">
-        <div class="col-4">
-            <div class="card text-center">
-                <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Police Department</h5>
-                  <p><em><strong>5 of 11</strong> officers patrolling.</em></p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><a href="policedash.html">View Dashboard</a></li>
-                  <li class="list-group-item">Join Session</li>
-                </ul>
-              </div>
+      <br>
+        <h1>Admin Dashboard</h1>
+        <hr>
+        <!--Stats Cards-->
+        <h2>All-Time Stats for {Community.Name}</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title text-success">${Citations.MoneyTotal}</h4>
+                      <h5 class="card-subtitle mb-2 text-muted">Citation Money Collected</h5>
+                      <p class="card-text">Total amount of citation money collected by police.</p>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><br>
+                      <a href="#" class="card-link">Police Dashboard</a>
+                      <a href="#" class="card-link">Current Monthly Stats</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title text-danger">${EmergencyServices.MoneyTotal}</h4>
+                      <h5 class="card-subtitle mb-2 text-muted">Emergency Services Bills Collected</h5>
+                      <p class="card-text">Total amount of money garnered by emergency services.</p>
+                      <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <br>
+                      <a href="#" class="card-link">Fire / EMT Dashboard</a>
+                      <a href="#" class="card-link">Current Monthly Stats</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title text-warning">${TowedVehiclePayments.MoneyTotal}</h4>
+                      <h5 class="card-subtitle mb-2 text-muted">Impounded/Towed Vehicle Payments</h5>
+                      <p class="card-text">Total amount of money collected on towed vehicles.</p>
+                      <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <br>
+                      <a href="#" class="card-link">DoT Dashboard</a>
+                      <a href="#" class="card-link">Current Monthly Stats</a>
+                    </div>
+                  </div>
+            </div>
         </div>
-        <div class="col-4">
-            <div class="card text-center">
-                <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Fire/EMT Services</h5>
-                  <p><em><strong>4 of 8</strong> firefighters saving lives.</em></p>
+        <!--End Stats Cards-->
+        <hr>
+        <div class="row">
+            
+            <div class="col-md-8">
+                <h2>Getting Started</h2>
+                <hr>
+                <div class="row">  
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header ">
+                        <button class="accordion-button collapsed text-primary bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <strong>User Management</strong>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-primary bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          <strong>Department Management</strong>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-primary bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <strong>Adding Integrations / Social Media</strong>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="firedash.html">View Dashboard</a></li>
-                  <li class="list-group-item">Join Session</li>
-                </ul>
-
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card text-center">
-                <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title ">Department of Transportation</h5>
-                  <p><em><strong>1 of 3</strong> truckers towing vehicles.</em></p>
+                <br>
+                <div class="row">
+                  <h2>Users at a Glance</h2>
+                  <hr>
+                  <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                          <h1 class="card-title text-success text-center">100</h1>
+                          <h5 class="card-subtitle mb-2 text-muted text-center">Fully Enrolled Members</h5>
+                          <hr>
+                          <p class="card-text">Total number of members enrolled and assigned their departments.</p>
+                          
+                          <a href="#" class="card-link">User Management</a>
+                        </div>
+                      </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="dotdash.html">View Dashboard</a></li>
-                    <li class="list-group-item">Join Session</li>
-                </ul>
-              </div>
-        </div>
-     </div>
-     <br>
-     <div class="row">
-        <div class="col-4">
-            <div class="card text-center">
-                <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Civilians</h5>
-                  <p><em><strong>18 of 32</strong> civilians driving to work.</em></p>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                          <h1 class="card-title text-warning text-center">10</h1>
+                          <h5 class="card-subtitle mb-2 text-muted text-center">Members Needing Assignments</h5>
+                          <hr>
+                          <p class="card-text">Total number of members that have not been designated to their departments.</p>
+                          <a href="#" class="card-link">User Management</a>
+                        </div>
+                      </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="civiliansdash.html">View Dashboard</a></li>
-                    <li class="list-group-item">Join Session</li>
-                </ul>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card text-center">
-                <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Something</h5>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                          <h1 class="card-title text-danger text-center">5</h1>
+                          <h5 class="card-subtitle mb-2 text-muted text-center">Members Not Enrolled</h5>
+                          <hr>
+                          <p class="card-text">Total members waiting for acceptance/enrollment.</p>
+                          <a href="#" class="card-link">User Management</a>
+                        </div>
+                      </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">View Dashboard</li>
-                  <li class="list-group-item">Join Session</li>
-                </ul>
-
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card text-center">
-                <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title ">Something</h5>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">View Dashboard</li>
-                  <li class="list-group-item">Join Session</li>
-                </ul>
-              </div>
+            </div>
+            <div class="col-md-4">
+                <h2>New Users</h2>
+                <hr>
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>{Username}</strong></h5>
+                      <p class="card-text"><strong>Character Name:</strong> {Character.FullName}</p>
+                      <p class="card-text"><strong>Character Departments:</strong> {Character.Departments.Deparments}</p>
+                      <p class="card-text"><strong>Admin:</strong> {IsAdministrator}</p>
+                      <p class="card-text"><strong> Moderator:</strong> {IsModerator}</p>
+                      <p class="card-text"><strong>Days Since Logged In:</strong> {DaysSinceUserLoggedIn}</p>
+                    </div>
+                    <nav aria-label="pagination">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                  </div>
+            </div>
         </div>
-     </div>
-     <br>
     </main>
   </div>
 </div>
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
+    <script src="assets/js/dashboard.js"></script></body>
 </html>
